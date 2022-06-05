@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block container %}
+<h3>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+           {% for message in messages %}
+              {{ message }}
+           {% endfor %}
+        {% endif %}
+    {% endwith %}
+    </h3>
+    
+    <body>
+    
+        <form method = "POST" action = "">
+            {{ form.hidden_tag() }}
+            <div class=" mb-3">
+            {{ form.email.label(class="form-label")}}
+             {{ form.email(class="form-control")}}
+                </div>
+         
+                <div class="mb-3">
+             {{ form.password.label(class="form-label")}}
+             {{ form.password(class="form-control")}}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.remember_me(class="form-check-input")}}
+             {{form.remember_me.label(class="form-label")}}
+          
+             </div>
+             <div class="mb-3">
+    
+             {{ form.submit(class="btn btn-primary") }}
+             </div>
+        </form>
+
+        <br><p>Don't have an account already? <a href = "{{ url_for('register') }}">Click here to Register</a></p>
+
+
+        <br><p>For students,  <a href = "{{ url_for('login') }}">Click here to login</a></p>
+
+
+        
+
+        
+    </body>
+    
+    
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'base.html' %} {% block container %}
+<h3>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+           {% for message in messages %}
+              {{ message }}
+           {% endfor %}
+        {% endif %}
+    {% endwith %}
+    </h3>
+    
+    <body>
+    
+        <form method = "POST" action = "">
+            {{ form.hidden_tag() }}
+
+            <div class="mb-3">
+            {{ form.name.label(class="form-label")}}
+             {{ form.name(class="form-control")}}
+            </div>
+            <div class="mb-3">
+             {{ form.symbol_no.label(class="form-label")}}
+             {{ form.symbol_no(class="form-control")}}
+                </div>
+                <div class="mb-3">
+             {{ form.registration_no.label(class="form-label")}}
+             {{ form.registration_no(class="form-control")}}
+                    </div>
+                    <div class="mb-3">
+            {{ form.email.label(class="form-label")}}
+             {{ form.email(class="form-control")}}
+</div>
+<div class="mb-3">
+             {{ form.faculty.label(class="form-label")}}
+             {{ form.faculty(class="form-select")}}
+</div>
+<div class="mb-3">
+             {{ form.program.label(class="form-label")}}
+             {{ form.program(class="form-select")}}
+</div>
+<div class="mb-3">
+             {{ form.password.label(class="form-label")}}
+             {{ form.password(class="form-control")}}
+</div>
+<div class="mb-3">
+             {{ form.confirm_password.label(class="form-label")}}
+             {{ form.confirm_password(class="form-control")}}
+
+             </div>
+             <div class="mb-3">
+             {{ form.submit(class="btn btn-primary") }}
+             </div>
+             
+        </form>
+
+        <br><p>Have an account already? <a href = "{{ url_for('login') }}">Click here to Login</a></p>
+
+        
+
+    </body>
+    <footer>You can only create account if you have already received symbol no.</footer>
+{% endblock %}

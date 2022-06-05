@@ -1,0 +1,52 @@
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 442','Digital Signal Analysis and Processing',3, 8);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 484','Social and Professional Issues in IT',2, 8);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('MGT 321','Organization and Management',2, 8);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 481','Information Systems',3, 8);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('Elective III','Elective III',3, 8);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 490','Project III',5, 8);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('MTH 212','Engineering Mathematics III',3, 3);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 225','Data Structure and Algorithms',3, 3);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('ELE 210','Electrical Engineering Material',2, 3);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('ELE 211','Network Theory',3, 3);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('ELX 211','Electronics Device and Circuits',3, 3);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('ELX 212','Logic Circuits',3, 3);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('MTH 230','Numerical Method',3, 5);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('MTH 220','Probability and Statistics',3, 5);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 330','Operating System',3, 5);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 332','Computer Architecture',3, 5);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 241','Computer Graphics',3, 5);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 326','Theory of Computation',3, 5);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`) VALUES ('MTH 112','Engineering Mathematics I',3, 1);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`) VALUES ('CHM 111','Chemistry',4, 1);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`) VALUES ('ENG 111','Communication Techniques',2, 1);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`) VALUES ('CMP 113','Programming in C',3, 1);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`) VALUES ('ELE 110','Basic Electrical Engineering',3, 1);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`) VALUES ('MEC 110','Mechanical Workshop',1, 1);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('MTH 214','Engineering Mathematics IV',3, 4);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('ELX 231','Instrumentation',3, 4);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 226','Database Management System',3, 4);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 211','Programming Technology',3, 4);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('ELX 230','Microprocessor',3, 4);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 290','Project- I',1, 4);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`) VALUES ('MTH 114','Engineering Mathematics II',3, 2);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('PHY 111','Physics',4, 2);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('MEC 120','Engineering Drawing',2, 2);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 115','Object Oriented Programming C++',3, 2);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('MEC 111','Thermal Science',2, 2);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('MEC 130','Applied Mechanics',3, 2);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('ECO 411','Engineering Economics',3, 7);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 441','Image Processing & Pattern Recognition',3, 7);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 455','Artificial Intelligence',3, 7);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 335','Computer Networks',3, 7);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 483','ICT Project Management',3, 7);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('Elective II','Elective II',3, 7);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 350','Simulation and Modeling',3, 6);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 340','Data Communication',3, 6);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 320','Object Oriented Software Engineering',3, 6);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('ELX 312','Embedded System',3, 6);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('Elective I','Elective I',3, 6);
+INSERT INTO `subject`(`course_id`, `course_name`, `course_credits`, `course_semester`)VALUES ('CMP 390','Project II',2, 6);                                                                                                                                                                                                                                                                                
+
+
+
+

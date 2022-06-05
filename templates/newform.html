@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block container %}
+
+<body>
+    {% if current_user.is_authenticated %}
+
+    <form method = "POST" action = "" >
+        {{ form.hidden_tag() }}
+        
+        <div class="mb-3">
+
+        {{ form.semester.label( class="form-label")}}
+         {{ form.semester(class="form-control")}}
+        </div>
+
+     
+        <div class="mb-3">
+
+         {{ form.bank_reciept_no.label(class="form-label")}}
+         {{ form.bank_reciept_no(class="form-control")}}
+         </div>
+    
+         <div class="mb-3">
+         {{ form.submit(class="btn btn-primary") }}
+            </div>
+
+    </form>
+
+
+    
+</body>
+   
+    {% endif %}
+
+  
+</body>
+{% endblock %}

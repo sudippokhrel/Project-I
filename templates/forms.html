@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block container %}
+
+<body>
+    {% if current_user.is_authenticated %}
+    <table class="table table-hover">
+        <tr>
+            <th>Form-id</th>
+            <th>Semester</th>
+            <th>Bank Reciept No</th>
+            <th>Verified</th>
+            <th>Options</th>
+            </tr>
+        </tr>
+        {% for x in forms_result %}
+            <tr>
+                <td> {{x.form_id}}</td>
+                <td>{{x.semester}}</td>
+                <td>{{x.bank_reciept_no}}</td>
+                <td>{{x.verified}}</td>
+                <form action="{{url_for('view_form')}}" method="GET"  target="_blank">
+                <td>{%if x.verified==True %}
+                    <input type="text" id="form_id" name="form_id" value="{{x.form_id}}" hidden/>
+                    <input type="submit" class="btn btn-success" value="View"/>
+                    {% else %}
+                    <button type="button" class="btn btn-success" disabled>View</button>
+                    {% endif %}
+                </td>
+            </form>
+                
+            </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <button type="button" class="btn btn-primary" onclick ="window.location.href=' {{ url_for( 'new_form' ) }} ';">Add a new form</button>
+
+    {% endif %}
+
+  
+</body>
+{% endblock %}

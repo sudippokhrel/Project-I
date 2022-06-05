@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Exam form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../static/styles/bootstrap.min.css" rel="stylesheet" >
+
+   <script>
+      function customPrint(){
+        var prtContent = document.getElementById("print");
+        var WinPrint = window.open('', '', 'left=0,top=0,width=384,height=900,toolbar=0,scrollbars=0,status=0');
+        WinPrint.document.write('<html><head>');
+        WinPrint.document.write('</head><body onload="print();close();">');
+        WinPrint.document.write(prtContent.innerHTML);
+        WinPrint.document.write('</body></html>');
+        WinPrint.document.close();
+        WinPrint.focus();
+      }
+   </script>
+        
+    </script>
+</head>
+<div align="center" id="print">
+{% block container %}
+<br>
+<h1 ><p>Semester End Examinations Form</p></h1>
+
+<p> Name: {{user.name}} &emsp; Pu-Registration-No: {{user.registration_no}}</p>
+<p> Symbol-No: {{user.symbol_no}} &emsp; Semester: {{form.semester}}</p>
+<p>Status: Verfied</p>
+
+<table class="table table-hover">
+    <tr>
+    <th>Code</th>
+    <th>&emsp;Subject</th>
+    <th>&emsp;Credits</th>
+    </tr>
+
+    {% for x in subs %}
+    <tr>
+  
+    <td>{{x.course_id}}</td>
+    <td>&emsp;{{x.course_name}}</td>
+    <td>&emsp;{{x.course_credits}}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+</div>
+<div align="center">
+<br>
+<button  class = "btn btn-primary" onclick="customPrint()">Print Pdf</button>
+</div>
+
+
+{% endblock %}
