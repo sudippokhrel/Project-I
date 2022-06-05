@@ -63,6 +63,7 @@
 	We use bcrypt to generate encrypted passwords._**
 	
 	3.Execute, on the powershell(command line): 
+	
 	This will create tables and populate tables
 	
 	 `python database_setup.py` 
